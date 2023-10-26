@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}
+Register
+{% endblock%}
+
+{% block page %}
+Register here 
+{% if email %}
+<div class="alert alert-danger" role="alert">
+    Email Already Exist
+  </div>
+    {% elif phone %}
+<div class="alert alert-danger" role="alert">
+    Phone Already Exist
+  </div>
+{% endif %}
+<form action="" method="post">
+    
+{% csrf_token %}
+{{form.as_p}}
+<button class="btn btn-primary" type="submit">submit</button>
+</form>
+
+{% endblock page %}

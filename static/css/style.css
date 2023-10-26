@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+.logo{
+    font-family:'Permanent Marker', cursive;
+    
+    /* -webkit-background-clip: text; Clip the background to the text */
+    border-color: black;
+    border: 5px;
+    color:#0dcaf0;
+    text-shadow: 1px 1px 2px black,
+    2px 2px 6px grey,
+    3px 3px 6px ,
+    4px 4px 8px white;
+    text-decoration:wavy;
+    font-size: 70px;
+}
+.img_course{
+    border-radius: 10%;
+    padding: 10px;
+    width: 100%;
+    height: 400px;
+}
+
+.img_foot{
+    width: 250px;
+    height: auto;
+    
+    
+}
+
+.admin_button{size: 200px;
+    width: 48%; height:100px;padding:20px; font-size:x-large;
+}
+
+.nav_btn
+    {
+        --bs-btn-color: #0d6efd;
+        --bs-btn-border-color: #0d6efd;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #0d6efd;
+        --bs-btn-hover-border-color: #0d6efd;
+        --bs-btn-focus-shadow-rgb: 13,110,253;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: #0d6efd;
+        --bs-btn-active-border-color: #0d6efd;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #0d6efd;
+        --bs-btn-bg: rgb(255, 255, 255);
+        --bs-btn-disabled-border-color: #0d6efd;
+        --bs-gradient: none;
+    }
+.ad_btn{
+        --bs-btn-color: #0d6efd;
+        --bs-btn-border-color: #0d6efd;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #0d6efd;
+        --bs-btn-hover-border-color: #0d6efd;
+        --bs-btn-focus-shadow-rgb: 13,110,253;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: #0d6efd;
+        --bs-btn-active-border-color: #0d6efd;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #0d6efd;
+        --bs-btn-bg: rgb(255, 255, 255);
+        --bs-btn-disabled-border-color: #0d6efd;
+        --bs-gradient: none;
+}
+.ad_nav{
+        --bs-btn-color: #0d6efd;
+        --bs-btn-border-color: #0d6efd;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #0d6efd;
+        --bs-btn-hover-border-color: #0d6efd;
+        --bs-btn-focus-shadow-rgb: 13,110,253;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: #0d6efd;
+        --bs-btn-active-border-color: #0d6efd;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #0d6efd;
+        --bs-btn-bg: rgb(255, 255, 255);
+        --bs-btn-disabled-border-color: #0d6efd;
+        --bs-gradient: none;
+        border:0;
+        width:320px;
+
+}

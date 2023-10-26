@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static%}
+{% block title%}
+Course1
+{%endblock%}
+{% block head%}
+
+{% endblock%}
+{%block page%}
+
+{% for i in course %}
+<h1>{{i.category}} Course</h1>
+<h2>{{i.description}}</h2>
+{% for j in highlight%}
+<p>{{j}}</p>
+{% endfor %}
+
+
+<a href="register/{{i.id}}" class="btn btn-primary">Register here </a>
+{% endfor %}
+{%endblock%}

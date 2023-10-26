@@ -1,0 +1,16 @@
+{% extends "admin_base.html" %}
+{% block page %}
+<form method="post">
+    {% csrf_token %}
+ {# Renders the form fields as paragraphs with pre-filled data #}
+    <div class="form-group row">
+        <label for="category">category:- {{ form.category }} </label>
+        <label for="descripton">description {{form.description}}</label>
+        <label for="price">price :- {{form.price}}</label>
+        <label for="highlight">highlight :-{{form.highlight}}</label>
+        <label for="photo">photo :- {{form.photo}} </label>
+    </div>
+    <button type="submit">Save</button>
+</form>
+{% endblock page %}
+

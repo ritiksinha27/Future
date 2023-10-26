@@ -1,0 +1,31 @@
+{% extends "admin_base.html" %}
+{% block page %}
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Category</th>
+        <th scope="col">Price</th>
+        <th scope="col">Description</th>
+        <th scope="col">Highlight</th>
+        <th scope="col">Action</th>
+
+      </tr>
+    </thead>
+    <tbody>
+        {% for i in courses%}
+      <tr>
+        <th scope="row">{{i.id}}</th>
+        <td>{{i.category}}</td>
+        <td>{{i.price}}</td>
+        <td>{{i.description}}</td>
+        <td>{{i.highlight}}</td>
+        <td><a href="course_manage/edit/{{i.id}}" class="btn btn-primary">Edit</a></td>
+      </tr>
+      {% endfor%}
+
+
+
+
+{% endblock page %}
