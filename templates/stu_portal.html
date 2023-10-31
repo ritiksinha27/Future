@@ -1,11 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Hello
-</body>
-</html>
+{% extends "stu_portal_base.html" %}
+{% load static %}
+{% block page %}
+{% comment %} Side Bar  {% endcomment %}
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Sections</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+          Home
+        </a><br>
+        <a href="/student_portal/lecture" class="list-group-item list-group-item-action">Video Lectures</a><br>
+        <a href="/student_portal/notes" class="list-group-item list-group-item-action">Important Notes</a><br>
+        <a href="/student_portal/assignments" class="list-group-item list-group-item-action">Assignments</a><br>
+        <a class="list-group-item list-group-item-action disabled" aria-disabled="true">Quizz</a>
+      </div>
+    </div>
+  </div>
+{% comment %} Side Bar ends  {% endcomment %}
+<div class="hero_area" style="background-image: url({% static 'images/stu_portal_bg.png' %});">
+<h1>
+  Welcome,Mr.{{student.name}}Ritik
+</h1>
+<h2 class="head-student">Your <span >Courses</span></h2>
+<div class="row">
+  
+
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Course Name</h5>
+        <p class="card-text">This course consist of basics.</p>
+        <a href="student_portal/course/{{i.id}}" class="btn btn-primary">Go to Course</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+  </div></div>
+
+{% endblock page %}
+

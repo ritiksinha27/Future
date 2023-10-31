@@ -14,7 +14,7 @@ class CourseAdm(admin.ModelAdmin):
 admin.site.register(Course,CourseAdm)
 
 class StudentAdm(admin.ModelAdmin):
-    list_display=['name','course','amount_paid','remaining']
+    list_display=['name','course','amount_paid','remaining','user_id','password']
 admin.site.register(Student,StudentAdm)
 
 class LeadsAdm(admin.ModelAdmin):

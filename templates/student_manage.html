@@ -1,0 +1,39 @@
+{% extends 'admin_base.html' %}
+{% block page %}
+
+<h1>
+   Students
+</h1>
+<div class="row justify-content-start">
+<div class="col-8">
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Course</th>
+        <th scope="col">paid amnt</th>
+        <th scope="col">remaining</th>
+        <th scop="col">user_id</th>
+        <th scope="col">password</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for i in students %}
+      <tr>
+        <th scope="row">{{forloop.counter}}</th>
+        <td>{{i.client.name}}</td>
+        <td>{{i.client.email}}</td>
+        <td>{{i.course_obj.category}}</td>
+        <td> {{i.amount_paid}} </td>
+        <td> {{i.remaining}} </td>
+        <td>{{i.user_id}}</td>
+        <td>{{i.password}}</td>
+      </tr>
+      {% endfor %}
+</tbody></table>
+
+</div>
+{% endblock page %}
+

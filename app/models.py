@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.contrib.auth.hashers import make_password
 # Create your models here.
 class Client(models.Model):
     name=models.CharField( max_length=30)
@@ -18,7 +18,7 @@ class Client(models.Model):
     def __str__(self):
         return self.name
     def client_id(self):
-        return(f"{self.name[:4]}-{self.client_id_no}")
+        return(f"{self.name[:4]}-FT-{self.client_id_no}")
     
 class Course(models.Model):
     category=models.CharField(max_length=20)
@@ -41,6 +41,10 @@ class Student(models.Model):
     client=models.OneToOneField(Client,on_delete=models.CASCADE)
     course_obj=models.ForeignKey(Course,on_delete=models.CASCADE)
     amount_paid=models.FloatField()
+    def password(self):
+        return(f"{self.client.client_id_no}&&{self.client.email[:5]}")
+    def user_id(self):
+        return (f"{self.client.name[:4]}-FT-{self.client.client_id_no}")
     def __str__(self):
         return self.client.name
     def name(self):

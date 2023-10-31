@@ -4,13 +4,14 @@
     {% csrf_token %}
  {# Renders the form fields as paragraphs with pre-filled data #}
     <div class="form-group row">
-        <label for="category">category:- {{ form.category }} </label>
-        <label for="descripton">description {{form.description}}</label>
-        <label for="price">price :- {{form.price}}</label>
-        <label for="highlight">highlight :-{{form.highlight}}</label>
-        <label for="photo">photo :- {{form.photo}} </label>
+        <label for="category" style="padding: 20px;"class="fs-3">category:-{{ form.category }} </label>
+        <label for="descripton" style="padding: 20px;">description {{form.description}}</label>
+        <label for="price" style="padding: 20px;">price :- {{form.price}}</label>
+        <label for="highlight" style="padding: 20px;">highlight :-{{form.highlight}}</label>
+
+        <label for="photo" style="padding: 20px;">photo :- <img src="/media/{{course.photo}}" alt="course photo" style="width: 20%;">{{form.photo}} </label>
     </div>
-    <button type="submit">Save</button>
+    <button type="submit" class="btn btn-primary" >Save</button>
 </form>
 {% endblock page %}
 

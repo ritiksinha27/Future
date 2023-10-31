@@ -1,0 +1,31 @@
+{% extends 'admin_base.html' %}
+{% load static %}
+{% block page %}
+<h1>
+    Students
+ </h1>
+ <div class="row justify-content-start">
+ <div class="col-8">
+ <table class="table">
+     <thead>
+       <tr>
+         <th scope="col">#</th>
+         <th scope="col">Category</th>
+         <th scope="col">Video Name</th>
+         <th scope="col">Video</th>
+      
+       </tr>
+     </thead>
+     <tbody>
+         {% for i in videos %}
+       <tr>
+         <th scope="row">{{forloop.counter}}</th>
+         <td>{{i.category.category}}</td>
+         <td>{{i.video_name}}</td>
+         <td> <a href="{{i.video.url}}" >{{i.video}}</a></td>
+         
+       {% endfor %}
+ </tbody></table>
+ 
+ </div>
+ {% endblock page %}

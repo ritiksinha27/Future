@@ -6,24 +6,31 @@
 
 {% block page %}
 
+<h1>
+    Leads
+</h1>
+<div class="row justify-content-start">
+<div class="col-6">
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">email</th>
+        <th scope="col">checkbox</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for i in leads %}
+      <tr>
+        <th scope="row">{{forloop.counter}}</th>
+        <td>{{i.name}}</td>
+        <td>{{i.email}}</td>
+        <td>box</td>
+      </tr>
+      {% endfor %}
+</tbody></table>
 
-
-
-<div class="row">
-
-    <div class="col">
-        <a href="" class="btn btn-primary" style="width: 48%; height:100px;padding:20px; font-size:x-large;">Student Management</a>
-        <a href="" class="btn btn-primary" style="width: 48%; height:100px;padding:20px; font-size:x-large;">Open Leads</a>
-        </div></div><div class="row" style="margin-top: 100px
-        ;""> <div class="col">
-        <a href="ad/course_manage" class="btn btn-primary" style="width: 48%; height:100px;padding:20px; font-size:x-large;">Manage Course</a>
-        <a href="" class="btn btn-primary" style="width: 48%; height:100px;padding:20px; font-size:x-large;">Course Content</a>
-    </div></div>
-    <div class="row" style="margin-top: 100px
-        ;""> <div class="col">
-        <a href="" class="btn btn-primary" style="width: 48%; height:100px;padding:20px; font-size:x-large;">Manage Clients</a>
-        <a href="" class="btn btn-primary" style="width: 48%; height:100px;padding:20px; font-size:x-large;">Stocks Adviced</a>
-    </div></div>
-    
+</div>
 {% endblock page %}
 

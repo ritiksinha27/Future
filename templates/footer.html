@@ -1,34 +1,137 @@
 {% load static%}
 <link rel="stylesheet" href="{% static 'css/style.css'%}">
-<footer class="bg-dark text-light py-3">
-    <div class="container-fluid text-center text-md-left">
-        <div class="row text-center text-md-left">
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Future Traders</h5>
+    
+  <section class="info_section layout_padding2" style='margin-bottom:0'>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_contact">
+            <h4>
+              Gaurav Path, Telibandha
+            </h4>
+            <h4>Raipur</h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Raipur
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +91 7587092629
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  futuretradersacademy86@gmail.com
+                </span>
+              </a>
             </div>
-            <div class="col ">
-                <h5 class="text-warning">Important Links </h5>
-                <p>Home</p>
-                <p>Contact Us</p>
-                <p>FAQ</p>
+          </div>
+          <div class="info_social">
+            <a href="">
+              <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_detail">
+            <h4>
+              Info
+            </h4>
+            <p>
+              For any Query you can directly call or email us on the given contact details.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto info_col">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="active" href="/">
+                Home
+              </a>
+              <a class="" href="/about">
+                About
+              </a>
             </div>
-            <div class="col">
-                <h5 class="text-warning">Other Services</h5>
-                <p>Investments</p>
-                <p>Technology</p>
-            </div>
-        
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col ">
+          <h4>
+            Subscribe
+          </h4>
+          
+          <a href="subscribe" class="btn btn-primary">subscribe</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
         <p style="text-align: center;">&copy; {{ year }} Developed by Ritik Sinha</p>
     </div>
-</footer>
+  </section>
+
+        
+    </div>
 
 
+ <script>
+      window.onload = function() {
+          window.scrollTo(0, 0);
+      };
+  </script>
+    <script>
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+    
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/main.js"></script>
+    <script src="{% static 'js/main.js'%}"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js'%}"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- popper js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <!-- bootstrap js -->
+    <script type="text/javascript" src="{% static 'js/bootstrap.js'%}"></script>
+    <!-- owl slider -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
+    <!-- custom js -->
+    <script type="text/javascript" src="{% static 'js/custom.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/global.js'%}"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+    </script>
 </body>
 </html>
